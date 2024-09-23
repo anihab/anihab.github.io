@@ -123,6 +123,148 @@ $(window).on('load', function(){
 	});
 });
 
+$('#past .hdr').on('click', function() {
+	$('#past .archive').slideUp(500);
+    
+	var findElm = $(this).next("#past .archive");
+    
+	if($(this).hasClass('close')){
+		$(this).removeClass('close');
+	}else{
+		$('.close').removeClass('close');
+		$(this).addClass('close');
+		$(findElm).slideDown(500);
+	}
+});
+
+$(window).on('load', function(){
+	$('.accordion-area li:first-of-type section').addClass("open");
+	$(".open").each(function(index, element){	
+		var Title =$(element).children('#past .hdr');	
+		$(Title).addClass('close');				
+		var Box =$(element).children('#past .archive');	
+		$(Box).slideDown(500);					
+	});
+});
+
+$('#library .ac-btn').on('click', function() {
+	$('#library .lineup').slideUp(500);
+    
+	var findElm = $(this).next("#library .lineup");
+    
+	if($(this).hasClass('close')){
+		$(this).removeClass('close');
+	}else{
+		$('.close').removeClass('close');
+		$(this).addClass('close');
+		$(findElm).slideDown(500);
+	}
+});
+
+$(window).on('load', function(){
+	$('#library .accordion-area li:first-of-type section div').addClass("open");
+	$(".open").each(function(index, element){
+		var Title =$(element).children('#library .ac-btn');
+		$(Title).addClass('close');
+		var Box =$(element).children('#library .lineup');
+		$(Box).slideDown(500);
+	});
+});
+
+$(document).on('ready', function() {
+	$(".comics-slider").slick({
+	  slidesToShow:6,
+	  slidesToScroll:1,
+	  autoplay:true,
+	  autoplaySpeed: 3000,
+	  dots: false,
+	  draggable: true,
+	  prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+	  nextArrow: '<button class="slide-arrow next-arrow"></button>',
+	  cssEase: "linear",
+	  infinite: true,
+	  responsive: [
+		{
+	  breakpoint: 768,
+	  settings: {
+	  slidesToShow:5,
+	  swipeToSlide:true,
+		  }
+		},
+	  {
+	  breakpoint: 750,
+	  settings: {
+	  slidesToShow:4,
+	  arrows:false,
+	  swipeToSlide:true,
+		  }
+		},
+	  ]
+	});
+  });
+
+$(document).on('ready', function() {
+	$(".manga-viewer").slick({
+		slidesToShow:2, //
+		slidesToScroll:2,
+		autoplay:false,
+		dots:false,
+		arrows:true,
+		draggable: true,
+		rtl:true,
+		infinite: false,
+		cssEase: "linear",
+		responsive: [
+		{
+		breakpoint: 768,
+		settings: {
+		slidesToShow:1,
+		slidesToScroll:1,
+			}
+		},
+		{
+		breakpoint: 750,
+		settings: {
+		slidesToShow:1,
+		slidesToScroll:1,
+			}
+		},
+		]
+	});
+});
+
+$(document).on('ready', function() {
+	$(".name-viewer").slick({
+		slidesToShow:2, //
+		slidesToScroll:2,
+		autoplay:false,
+		dots:false,
+		arrows:true,
+		draggable: true,
+		prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+		nextArrow: '<button class="slide-arrow next-arrow"></button>',
+		rtl:true,
+		infinite: false,
+		cssEase: "linear",
+		responsive: [
+		{
+		breakpoint: 768,
+		settings: {
+		slidesToShow:1,
+		slidesToScroll:1,
+			}
+		},
+		{
+		breakpoint: 750,
+		settings: {
+		slidesToShow:1,
+		slidesToScroll:1,
+			}
+		},
+		]
+	});
+});
+
 //Fancybox3
 $(document).ready(function() {
 	$('[data-fancybox]').fancybox({
