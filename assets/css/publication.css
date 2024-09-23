@@ -414,7 +414,7 @@
   .type span {
     font-size: 0.75em; }
   .col-1 .type {
-    font-family: 'Kaisei Decol', serif;
+    font-family: "Noto Sans JP",sans-serif;
     font-weight: 700;
     font-size: 4rem;
     letter-spacing: 0;
