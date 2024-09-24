@@ -1,314 +1,284 @@
-@charset "UTF-8";
-/* projects */
-/* for projects.html only */
-.fa-color {
-  color: #ffa3ac; }
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta type="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta type="description" content="This is the website I have built to compile my academic and professional work. Thank you for visiting!">
 
-  #projects h1 {
-    text-align: center;
-    padding: 30px 0 60px; }
-    @media screen and (max-width: 749px) {
-      #projects h1 {
-        width: 87.5%;
-        margin: 0 auto;
-        padding: 20px 0 30px; } }
-  #projects h2.heading .kaisei {
-    letter-spacing: -0.15em; }
-  #projects h2.heading .date {
-    font-size: 0.75em;
-    font-family: "Noto Sans JP",sans-serif;
-    font-weight: 500; }
-  @media screen and (max-width: 749px) {
-    #comics h2.heading {
-      font-size: 2rem; } }
+    <title>anisa</title>
+    <!--assets-->
+    <link rel="icon" href="assets/img/icon.png" type="image/x-icon">
+    <link href="assets/css/destyle.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/object.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/loading.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/adobe-blank.css" rel="stylesheet" type="text/css">
+    <!--Font Awesome stylesheet for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--slick-->
+    <link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css"/>
+    <!--remodal-->
+    <link rel="stylesheet" type="text/css" href="assets/js/remodal/remodal.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/remodal/remodal-theme.css">
+    <!--Fancybox-->
+    <link rel="stylesheet" type="text/css" href="assets/js/fancybox/jquery.fancybox.css">
+    <!--project only-->
+    <link href="assets/css/projects.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="splash"> <!--/splash-->
+        <div id="splash-logo">
+            <p><img src="assets/img/icon.png" alt="" class="apng-image"></p>
+            loading...
+        </div>
+    </div>
+    <div class="splashbg"></div><!---for loading screen-->
+    <div id="wrapper">
+        <header>
+            <div id="header" class="c-flex -jc-sa">
+                <ul class="c-flex sns_btn top">
+                    <li><p><a href="https://github.com/anihab""><i class="fa-brands fa-github-alt g-size"></i></a></p></li>
+                    <li><p><a href="mailto:anisa24cs@gmail.com"><i class="fa-solid fa-envelope e-size"></i></a></p></li>
+                    <li><p><a href="https://www.linkedin.com/in/anisa-habib-32524a270/""><i class="fa-brands fa-linkedin-in ln-size"></i></a></p></li>
+                </ul>
+                <p class="logo"><a href="index.html"><img src="assets/img/logo.png" alt="Anisa's Portfolio"></a></p>
+                <p class="menu-circle">
+                <a class="menu">
+                    <span class="menu-line menu-line--top"></span>
+                    <span class="menu-line menu-line--bottom"></span>
+                </a></p>
     
-.top_lead {
-  background: linear-gradient(to bottom right, rgba(246, 224, 236, 0.7) 0%, rgba(224, 225, 246, 0.7) 50%, rgba(224, 236, 246, 0.7) 100%);
-  border-radius: 15px;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
-  padding: 15px;
-  margin: 0 auto 30px; }
-  .top_lead p {
-    font-size: 2.2rem;
-    color: #ffa3ac;
-    font-weight: 700;
-    line-height: 2.6rem; }
-  @media screen and (max-width: 749px) {
-    .top_lead {
-      font-size: 1.4rem;
-      line-height: 2.2rem;
-      margin: 0 auto 15px; }
-      .top_lead p {
-        font-size: 1.8rem;
-        line-height: 2.2rem; } }
+                <nav class="gnav"> <!---gnav-->
+                <div class="gnav-wrap">
+                    <p class="gnav-logo mt10"><img src="assets/img/logo.png" alt="Anisa's Portfolio"></p>
+                    <ul class="gnav-menu">
+                        <li class="col2 tl-c"><a href="index.html">About Me</a></li>
+                        <li class="col2 tr-c"><a href="topics.html">Updates</a></li>
+                        <li class="col3"><a href="publications.html" class="row2"><span>Publications＆</span><span>Research</span></a></li>
+                        <li class="col3"><a href="projects.html">Projects</a></li>
+                        <li class="col3"><a href="design.html">Web Design</a></li>
+                        <li class="col1 blr-c"><a href="mailto:anisa24cs@gmail.com">Inquiry</a></li>
+                    </ul>
+                        <div class="c-flex -jc-c"><ul class="c-flex sns_btn">
+                            <ul class="c-flex sns_btn top">
+                                <li><p><a href="https://github.com/anihab"><i class="fa-brands fa-github-alt g-size"></i></a></p></li>
+                                <li><p><a href="mailto:anisa24cs@gmail.com"><i class="fa-solid fa-envelope e-size"></i></a></p></li>
+                                <li><p><a href="https://www.linkedin.com/in/anisa-habib-32524a270/"><i class="fa-brands fa-linkedin-in ln-size"></i></a></p></li>
+                            </ul>
+                        </div>
+                </div><!--gnav-wrap-->
+                </nav><!--gnav-->
+            </div><!--id header-->
+    
+            <nav class="horizontal_menu"> <!--header menu-->
+                <ul>
+                    <li class="item"><a href="publications.html">publications</a></li>
+                    <li class="sym"></li>  
+                    <li class="item"><a href="projects.html">projects</a></li>
+                    <li class="sym"></li>  
+                    <li class="item"><a href="design.html">web design<i class="fas fa-chevron-down"></i></a>
+                        <ul class="post_menu">
+                            <li><a href="#">this site</a></li>
+                            <li class="sym"></li>  
+                            <li><a href="design.html">gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-#arrival #new, #arrival #highlight {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 60px; }
-  @media screen and (max-width: 749px) {
-    #arrival #new, #arrival #highlight {
-      margin-bottom: 30px; } }
-#arrival .box {
-  width: 48.58%;
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap; }
-  #arrival .box:nth-child(2n+1) {
-    margin-right: 2.84%; }
-  #arrival .box:nth-child(n+3) {
-    margin-top: 20px; }
-  @media screen and (max-width: 749px) {
-    #arrival .box {
-      width: 100%; }
-      #arrival .box:nth-child(2n+1) {
-        margin-right: 0; }
-      #arrival .box:nth-child(n+3) {
-        margin-top: 0px; }
-      #arrival .box:nth-child(n+2) {
-        margin-top: 20px; } }
+        <!--begin projects-->
+        <main>
+            <div id="projects">
+                <h1><img src="assets/img/proj/title.png" alt="Projects"></h1>
+                <div id="arrival" class="c1060">
+                <!-- projects-->
+                    <h2 class="heading">Current Projects<span class="date ffs-palt">（as of 9.20）</span></h2>
+                    <ul id="new">
+                        <!--new-project-->
+                        <li class="box">
+                            <p class="title">Diary App<em>&#9312;</em></p>
+                            <p class="type">IOS</p>
+                            <p class="preview"><a href=""><img src="assets/img/proj/diary.png" alt="Diary (1)"></a></p>
+                            <div class="detail">
+                                <p class="desc">Designing and building a diary application from scratch in Swift. My aim is to publish on the App Store ♪</p>
+                                <p class="trial"><a href="" class="btn btn-flat2"><span>Beta Demo</span><i class="fas fa-angle-right fa-p-r"></i></a></p>
+                            </div>
+                        </li>
+                        <!--new-project-->
+                        <li class="box">
+                            <p class="title">Sleep Tracker<em>&#9313;</em><em><span></span></em></p>
+                            <p class="type">IOS</p>
+                            <p class="preview"><a href=""><img src="assets/img/proj/sleep.png" alt="Sleep Tracker（2）＜initiation phase＞"></a></p>
+                            <div class="detail">
+                                <p class="desc">An application that lets you track your sleep in a cute and motivating way!<br>◆ This project is still in the planning phase.</p>
+                                <p class="trial"><a href="" class="btn btn-flat2"><span>Coming Soon</span><i class="fas fa-angle-right fa-p-r"></i></a></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--highlight projects-->
+                    <h2 class="heading">Highlight Projects</h2>
+                    <ul id="highlight">
+                        <!--highlight-project-->
+                        <li class="box">
+                            <p class="preview"><a href=""><img src="" alt="Learning Management System (1)"></a></p>
+                            <div class="detail">
+                                <p class="title">Learning Management System</p>
+                                <p class="type">Database Systems</p>
+                                <p class="desc">Designed a relational database and implemented the back-end of a web server to represent a learning management system (e.g. Canvas, Google Classroom). Constructed different user accounts with varying levels of access to certain pages. When assignments, classes, and enrollments are updated, deleted, or graded the database upd​​ates accordingly.<br>◆ MySQL, LINQ, C#, ASP.NET, CSS</p>
+                            </div>
+                        </li>
+                        <!--highlight-project-->
+                        <li class="box">
+                            <p class="preview"><a href="https://youtu.be/Rt6W-oNUhsE"><img src="assets/img/proj/23/lifestyle.png" alt="Lifestyle App (2)"></a></p>
+                            <div class="detail">
+                                <p class="title">Lifestyle App</p>
+                                <p class="type">Android</p>
+                                <p class="desc">Built an application that allows users to create and edit profiles to receive personalized BMR calculations, search for nearby hikes, and retrieve weather forecast information. Implemented a Room database to effectively store and load user profile information.<br>◆ Kotlin, Java, SQL, Android Studio<br></p>
+                                <p class="desc"><br></p> <!--manually added space-->
+                                <p class="trial"><a href="https://youtu.be/Rt6W-oNUhsE" class="btn btn-flat2"><span>View Demo</span><i class="fas fa-angle-right fa-p-r"></i></a></p>
+                            </div>
+                        </li>
+                        <!--highlight-project-->
+                        <li class="box">
+                            <p class="preview"><a href="https://youtu.be/dbb_DRmRus0"><img src="assets/img/proj/22/sprite.gif" alt="Sprite Editor (3)"></a></p>
+                            <div class="detail">
+                                <p class="title">Sprite Editor</p>
+                                <p class="type">Software Development</p>
+                                <p class="desc">Designed a Qt application in which users may use a variety of tools to create sprites by drawing a sequence of pixel images. Implemented features that allow users to save/load documents and preview the animation at adjustable frame rates.<br>◆ C++, Qt</p>
+                                <p class="desc"><br></p> <!--manually added space-->
+                                <p class="trial"><a href="https://youtu.be/dbb_DRmRus0" class="btn btn-flat2"><span>View Demo</span><i class="fas fa-angle-right fa-p-r"></i></a></p>
+                            </div>
+                        </li>
+                        <!--highlight-project-->
+                        <li class="box">
+                            <p class="preview"><a href="https://youtu.be/ze5vazm0zeo"><img src="assets/img/proj/22/garden.png" alt="Garden Application (4)"></a></p>
+                            <div class="detail">
+                                <p class="title">Garden Simulation</p>
+                                <p class="type">Software Development</p>
+                                <p class="desc">Built an application to educate users on the stages of a tomato plant’s life cycle through interactive images, animations, and mini games to progress between stages. Implemented the Box2D library.<br>◆ C++, Qt</p>
+                                <p class="desc"><br></p> <!--manually added space-->
+                                <p class="trial"><a href="https://youtu.be/ze5vazm0zeo" class="btn btn-flat2"><span>View Demo</span><i class="fas fa-angle-right fa-p-r"></i></a></p>
+                            </div>
+                        </li>
+                        <!--highlight-project-->
+                        <li class="box">
+                          <p class="preview"><a href=""><img src="" alt="Tank Wars Game (5)"></a></p>
+                          <div class="detail">
+                              <p class="title">Tank Wars Game</p>
+                              <p class="type">Software Development, Networking</p>
+                              <p class="desc">Implemented the server and client for an online multiplayer Tank Wars game using sockets.<br>◆ C#, .NET MAUI</p>
+                          </div>
+                        </li>
+                        <!--highlight-project-->
+                      <li class="box">
+                        <p class="preview"><a href=""><img src="" alt="Spreadsheet Application (6)"></a></p>
+                        <div class="detail">
+                          <p class="title">Spreadsheet Application<em></em></p>
+                          <p class="type">Software Development</p>
+                          <p class="desc">Built a spreadsheet application using the classic Model-View-Controller architecture, where a spreadsheet consists of a collection of cells. Users can select and edit cells, create formulas with dependencies, save and open documents, etc. <br>◆ C#, .NET MAUI</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--past projects-->
+                  <div id="past" class="c1060">
+                    <h2 class="heading">Past Projects</h2>
+                    <ul class="accordion-area">
+                    <!--2023-->
+                        <li>
+                        <section>
+                            <h3 class="title">2023</h3>
+                            <div class="box">
+                            <ul>
+                            <li></li>
+                            <li><a href="https://github.com/piero-salazar/Project_1_Lifestyle_App"><img src="assets/img/proj/23/lifestyle.png" alt="Lifestyle App (1)"></a></li>
+                            <li><a href="https://github.com/Kyonboo2339/LibraryWebServer"><img src="assets/img/proj/23/library.png" alt="Library Web Server (2)"></a></li>
+                            <li><a href=""><img src="../assets/img/proj/23/chess.png" alt="Chess Database (3)"></a></li>
+                            <li><a href="https://github.com/anihab/LearningManagementSystem"><img src="assets/img/proj/23/lms.png" alt="LMS (4)"></a></li>
+                            <li><a href="https://github.com/anihab/CatsInAI_Project2"><img src="assets/img/proj/23/pacman.gif" alt="AI Pacman (5)"></a></li>
+                            <li><a href="https://github.com/Kyonboo2339/CatsInAi_Project3"><img src="assets/img/proj/23/crawler.gif" alt="AI Crawler (6)"></a></li>
+                            </ul>
+                            </div>
+                        </section>
+                        </li>
+                     <!--2022-->
+                     <li>
+                        <section>
+                            <h3 class="title">2022</h3>
+                            <div class="box">
+                            <ul>
+                            <li></li>
+                            <li><a href="https://github.com/anihab/cs4400/tree/main/a1"><img src="assets/img/proj/22/simulator.png" alt="Simple Simulator (1)"></a></li>
+                            <li><a href="https://github.com/anihab/cs4400/tree/main/a4"><img src="assets/img/proj/22/shell.png" alt="Tiny Shell (2)"></a></li>
+                            <li><a href="https://github.com/anihab/cs4400/tree/main/a5"><img src="assets/img/proj/22/malloc.png" alt="Dynamic Memory Allocator (3)"></a></li>
+                            <li><a href="https://github.com/anihab/cs4400/tree/main/a6"><img src="assets/img/proj/22/friendlist.png" alt="Friendlist Server (4)"></a></li>
+                            <li><a href="https://github.com/University-of-Utah-CS3505/a7-sprite-editor-s22-Kyonboo2339"><img src="assets/img/proj/22/sprite.gif" alt="Sprite Editor (5)"></a></li>
+                            <li><a href="https://github.com/University-of-Utah-CS3505/a8-edu-app-chocoOnchoco"><img src="assets/img/proj/22/garden.gif" alt="Garden App (6)"></a></li>
+                            </ul>
+                            </div>
+                        </section>
+                        </li>
+                    </ul>
+                    <!--2021-->
+                    <li>
+                        <section>
+                            <h3 class="title">2021</h3>
+                            <div class="box">
+                            <ul>
+                            <li></li>
+                            <li><a href="https://github.com/uofu-cs3500-fall21/game-team_west_game"><img src="assets/img/proj/21/game.png" alt="Tank Wars (1)"></a></li>
+                            <li><a href="https://github.com/uofu-cs3500-fall21/ps6-team_west"><img src="assets/img/proj/21/spreadsheet.png" alt="Spreadsheet (2)"></a></li>
+                            </ul>
+                            </div>
+                        </section>
+                        </li>
+                    <!--early-->
+                    <li>
+                        <section>
+                            <h3 class="title">Early Work</h3>
+                            <div class="box">
+                            <ul>
+                            <!-- <li><a href="https://scratch.mit.edu/projects/76155616/"><img src="../assets/img/proj/early/spaceship.png" alt="Simple Spaceship Game (2015)"></a></li> -->
+                            </ul>
+                            </div>
+                        </section>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+        </main><!--end projects-->
 
-.preview {
-  border: 2px solid #f6e0ec;
-  -webkit-border-image: -webkit-linear-gradient(top left, #f6e0ec 0%, #e0e1f6 0%, #e0ecf6 100%);
-  -o-border-image: -o-linear-gradient(top left, #f6e0ec 0%, #e0e1f6 0%, #e0ecf6 100%);
-  border-image: linear-gradient(to bottom right, #f6e0ec 0%, #e0e1f6 0%, #e0ecf6 100%);
-  border-image-slice: 1; }
-  #new .preview {
-    width: 47.57%;
-    margin-right: 3.88%; }
-    @media screen and (max-width: 749px) {
-      #new .preview {
-        width: 59.03%;
-        margin: 0 auto 10px; } }
-  #highlight .preview {
-    width: 36.89%;
-    margin-right: 3.88%; }
-    @media screen and (max-width: 749px) {
-      #highlight .preview {
-        width: 32.99%;
-        margin-right: 3.47%; } }
-
-#new .detail {
-  width: calc(100% - 51.45%); }
-  @media screen and (max-width: 749px) {
-    #new .detail {
-      width: 100%; } }
-#highlight .detail {
-  width: calc(100% - 40.77%); }
-  @media screen and (max-width: 749px) {
-    #highlight .detail {
-      width: calc(100% - 36.46%); } }
-
-#new .title, #highlight .title {
-  color: #fc9cb2;
-  margin-bottom: 5px;
-  letter-spacing: -0.02em;
-  font-weight: 700; }
-  #new .title span, #highlight .title span {
-    font-size: 0.6em; }
-  #new .title em, #highlight .title em {
-    font-style: normal;
-    margin-left: 0.25em; }
-    #new .title em.fin, #highlight .title em.fin {
-      font-size: 0.6em;
-      margin-left: 0.25em;
-      font-family: "Noto Sans JP",sans-serif;
-      font-weight: 500;
-      background-color: #222;
-      color: #fff;
-      border-radius: 0.5em;
-      padding: 0.2em 0.5em 0.25em;
-      display: inline-block;
-      transform: translateY(-0.2em); }
-#new .title {
-  width: 100%;
-  font-size: 3rem;
-  line-height: 1; }
-  @media all and (min-width: 750px) and (max-width: 1120px) {
-    #new .title {
-      font-size: 3rem; } }
-  @media screen and (max-width: 749px) {
-    #new .title {
-      font-size: 2.4rem;
-      text-align: center; } }
-#highlight .title {
-  font-size: 2.5rem; }
-  @media all and (min-width: 750px) and (max-width: 1120px) {
-    #highlight .title {
-      font-size: 2.23vw; } }
-  @media screen and (max-width: 749px) {
-    #highlight .title {
-      font-size: 5.87vw; } }
-.title rt {
-  transform: translateY(0.2em); }
-
-.type {
-  font-weight: 700;
-  margin-bottom: 10px; }
-  .type span {
-    font-size: 0.75em; }
-  .type.pair {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end; }
-    .type.pair p:first-child {
-      margin-right: 1rem; }
-    @media screen and (max-width: 749px) {
-      .type.pair {
-        justify-content: center; } }
-  #new .type {
-    width: 100%;
-    font-size: 2.4rem;
-    text-align: right; }
-    @media all and (min-width: 750px) and (max-width: 1120px) {
-      #new .type {
-        font-size: 2.4rem; } }
-    @media screen and (max-width: 749px) {
-      #new .type {
-        font-size: 2rem;
-        text-align: center; } }
-  #highlight .type {
-    font-size: 2rem;
-    text-align: right; }
-    @media all and (min-width: 750px) and (max-width: 1120px) {
-      #highlight .type {
-        font-size: 2rem; } }
-    @media screen and (max-width: 749px) {
-      #highlight .type {
-        font-size: 1.6rem; } }
-
-.desc {
-  flex-grow: 1;
-  font-weight: 400; }
-  #new .desc {
-    font-size: 1.8rem;
-    line-height: 2.6rem;
-    margin-bottom: 20px; }
-    @media all and (min-width: 750px) and (max-width: 1120px) {
-      #new .desc {
-        font-size: 1.8rem; } }
-    @media screen and (max-width: 749px) {
-      #new .desc {
-        font-size: 1.4rem;
-        line-height: 2.2rem;
-        margin-bottom: 10px; } }
-  #highlight .desc {
-    /*		word-break: keep-all;
-    		line-break: strict;
-    		word-wrap: break-word;
-    		overflow-wrap: break-word;*/
-    font-size: 1.6rem;
-    line-height: 2.4rem; }
-    @media all and (min-width: 750px) and (max-width: 1120px) {
-      #highlight .desc {
-        font-size: 1.6rem;
-        line-height: 2.2rem; } }
-    @media screen and (max-width: 749px) {
-      #highlight .desc {
-        font-size: 1.2rem;
-        line-height: 1.8rem; } }
-
-@media screen and (max-width: 749px) {
-  .trial {
-    text-align: center;
-    margin: 0 auto; } }
-
-/* past */
-/* an accordion style list */
-  #past .accordion-area {
-    width: 100%;
-    margin: 0 auto; }
-  #past .accordion-area > li {
-    margin: 0 0　20px; }
-  #past .title {
-    position: relative;
-    /* relative position */
-    cursor: pointer;
-    background-color: rgb(255, 204, 229, 0.5);
-    border-radius: 0 2.1rem 2.1rem 0;
-    font-size: 2.2rem;
-    line-height: 4.2rem;
-    font-weight: 500;
-    padding: 0 0 0 1em;
-    margin-bottom: 1em;
-    transition: all .5s ease;
-    /* arrow icon */ }
-    @media screen and (max-width: 749px) {
-      #past .title {
-        font-size: 1.8rem;
-        line-height: 2.8rem; } }
-    #past .title::before {
-      position: absolute;
-      font-family: "Font Awesome 5 Free";
-      content: "\f0da";
-      font-weight: 900;
-      position: absolute;
-      font-size: 2rem;
-      left: 0.5em;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #fc9cb2;
-      font-weight: 900;
-      -webkit-font-smoothing: antialiased; }
-      @media screen and (max-width: 749px) {
-        #past .title::before {
-          font-size: 1.6rem; } }
-    #past .title::after {
-      position: absolute;
-      font-family: "Font Awesome 5 Free";
-      content: "\f078";
-      font-weight: 900;
-      position: absolute;
-      font-size: 2rem;
-      right: 1em;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #fc9cb2;
-      font-weight: 900;
-      -webkit-font-smoothing: antialiased; }
-      @media screen and (max-width: 749px) {
-        #past .title::after {
-          font-size: 1.6rem; } }
-    #past .title.close::after {
-      content: "\f077";
-      -webkit-font-smoothing: antialiased; }
-  #past .box {
-    display: none;
-    /* hide initially */
-    margin-bottom: 20px; }
-    #past .box ul {
-      display: flex;
-      flex-wrap: wrap; }
-      #past .box ul li {
-        border: 2px solid #f6e0ec;
-        -webkit-border-image: -webkit-linear-gradient(top left, #f6e0ec 0%, #e0e1f6 0%, #e0ecf6 100%);
-        -o-border-image: -o-linear-gradient(top left, #f6e0ec 0%, #e0e1f6 0%, #e0ecf6 100%);
-        border-image: linear-gradient(to bottom right, #f6e0ec 0%, #e0e1f6 0%, #e0ecf6 100%);
-        border-image-slice: 1;
-        width: 15.09%;
-        margin-right: 1.89%; }
-        #past .box ul li:nth-child(6n) {
-          margin-right: 0; }
-        #past .box ul li:nth-child(n+7) {
-          margin-top: 10px; }
-        @media screen and (max-width: 749px) {
-          #past .box ul li {
-            border-width: 1px;
-            width: 23.44%;
-            margin-right: 2.08%; }
-            #past .box ul li:nth-child(6n) {
-              margin-right: 1.89%; }
-            #past .box ul li:nth-child(4n) {
-              margin-right: 0; }
-            #past .box ul li:nth-child(n+5) {
-              margin-top: 10px; } }
-        #past .box ul li.shape {
-          border: none; }
-          #past .box ul li.shape img {
-            border: 2px solid #f6e0ec;
-            -webkit-border-image: -webkit-linear-gradient(top left, #f6e0ec 0%, #e0e1f6 0%, #e0ecf6 100%);
-            -o-border-image: -o-linear-gradient(top left, #f6e0ec 0%, #e0e1f6 0%, #e0ecf6 100%);
-            border-image: linear-gradient(to bottom right, #f6e0ec 0%, #e0e1f6 0%, #e0ecf6 100%);
-            border-image-slice: 1; }
+        <footer>
+            <div id="footer" class="c1060">
+            <div class="mobile_only pb30">
+                <ul class="c-flex sns_btn top">
+                    <li><p><a href="https://github.com/anihab"><i class="fa-brands fa-github-alt g-size"></i></a></p></li>
+                    <li><p><a href="mailto:anisa24cs@gmail.com"><i class="fa-solid fa-envelope e-size"></i></a></p></li>
+                    <li><p><a href="https://www.linkedin.com/in/anisa-habib-32524a270/"><i class="fa-brands fa-linkedin-in ln-size"></i></a></p></li>
+                </ul>
+            </div>
+    
+            <div class="banner">
+                <figure><a href=""><img src="" alt=""></a></figure>
+            </div>
+            <p class="txt_center pb20">All illustrations, images, and text published on this website were created by and belong to me.<br>Please refrain from any unauthorized reproduction!</p>
+            <!-- <p class="copyright">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script></p> -->
+            </div>
+        </footer>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!--slick-->
+      <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+      <!--remodal-->
+      <script type="text/javascript" src="assets/js/remodal/remodal.min.js"></script>
+      <!--Fancybox-->
+      <script type="text/javascript" src="assets/js/fancybox/jquery.fancybox.min.js"></script>
+      <!--APNG Edge, IE-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/apng-canvas/2.1.1/apng-canvas.min.js"></script>
+      <!--script-->
+      <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>
