@@ -1,8 +1,10 @@
 @charset "UTF-8";
 /* main style */
+
 /* open source fonts */
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Kaisei+Decol:wght@400;500;700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fontlibrary.org//face/adobe-blank");
+
 html {
   width: 100%;
   height: auto;

@@ -133,11 +133,14 @@
         width: 250px; } }
 
   #top .top-slider {
-    display: none; }
+    display: block;
+    width: 440px;
+    margin: 0 auto;
+    justify-content: center; }
     @media all and (min-width: 750px) and (max-width: 1120px) {
       #top .top-slider {
         display: block;
-        width: 560px;
+        width: 440px;
         margin: 0 auto; } }
     @media screen and (max-width: 749px) {
       #top .top-slider {
