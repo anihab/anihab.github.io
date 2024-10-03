@@ -1,43 +1,6 @@
 @charset "UTF-8";
 /* home */
 /* for index.html only */
-#footer .banner {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px; }
-  @media screen and (max-width: 749px) {
-    #footer .banner {
-      flex-direction: column; } }
-  #footer .banner figure {
-    width: 244px; }
-    #footer .banner figure:not(:nth-child(4n)) {
-      margin-right: 28px; }
-    @media screen and (max-width: 749px) {
-      #footer .banner figure {
-        width: 100%; }
-        #footer .banner figure:not(:nth-child(4n)) {
-          margin-right: 0; }
-        #footer .banner figure:nth-child(n+2) {
-          margin-top: 10px; } }
-#footer .links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-  #footer .links li {
-    padding: 0.5em 0;
-    width: 20%; }
-    @media screen and (max-width: 749px) {
-      #footer .links li {
-        width: 50%; } }
-    #footer .links li a {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      text-align: left; }
-      @media screen and (max-width: 749px) {
-        #footer .links li a {
-          justify-content: flex-start; } }
-
 #top {
   position: relative;
   width: 1120px;
@@ -440,3 +403,40 @@
       transform: scale(1.1); }
   #lineup .slick-list {
     overflow: visible; }
+
+#footer .banner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; }
+  @media screen and (max-width: 749px) {
+    #footer .banner {
+      flex-direction: column; } }
+  #footer .banner figure {
+    width: 244px; }
+    #footer .banner figure:not(:nth-child(4n)) {
+      margin-right: 28px; }
+    @media screen and (max-width: 749px) {
+      #footer .banner figure {
+        width: 100%; }
+        #footer .banner figure:not(:nth-child(4n)) {
+          margin-right: 0; }
+        #footer .banner figure:nth-child(n+2) {
+          margin-top: 10px; } }
+#footer .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #footer .links li {
+    padding: 0.5em 0;
+    width: 20%; }
+    @media screen and (max-width: 749px) {
+      #footer .links li {
+        width: 50%; } }
+    #footer .links li a {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left; }
+      @media screen and (max-width: 749px) {
+        #footer .links li a {
+          justify-content: flex-start; } }

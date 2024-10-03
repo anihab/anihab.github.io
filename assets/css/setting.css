@@ -14,6 +14,7 @@
     background-position: 0 0; }
   100% {
     background-position: 400px 310px; } }
+    
 /*========= loading screen ===============*/
 #splash {
   position: fixed;
@@ -43,7 +44,6 @@
         width: 100%; } }
 
 /*========= screen transitions ===============*/
-/* screen transition animation */
 body {
   /* background: linear-gradient(to bottom right, #f6e0ec 0%, #e0e1f6, #e0ecf6 100%); */
   background: #fff;
@@ -68,16 +68,16 @@ body {
   position: fixed;
   transform: scale(100);
   background: linear-gradient(to bottom right, #f6e0ec 0%, #e0e1f6, #e0ecf6 100%);
-  /*stretch bg color*/
+  /* stretch bg color */
   z-index: 999;
-  /*circle shape*/
+  /* circle shape */
   top: calc(50% - 1rem);
   /*50% - radius*/
   left: calc(50% - 1rem);
   width: 2rem;
   height: 2rem; }
 
-/*appear when the body has the 'appear' class*/
+/* appear when the body has the 'appear' class */
 body.appear .splashbg {
   display: block;
   border-radius: 50%;
@@ -87,19 +87,19 @@ body.appear .splashbg {
 
 @keyframes PageAnimation {
   0% {
-    /*circle start size*/
+    /* circle start size */
     transform: scale(100); }
   100% {
-    /*circle start size*/
+    /* circle start size */
     transform: scale(0);
     display: none;
-    /*hide when finished*/ } }
-/*content settings appear after transition*/
+    /* hide when finished */ } }
+/* content settings appear after transition */
 #wrapper {
   opacity: 0;
-  /*start at 0 opacity*/ }
+  /* start at 0 opacity */ }
 
-/*appear when the body has the 'appear' class*/
+/* appear when the body has the 'appear' class */
 body.appear #wrapper {
   animation-name: PageAnimationAppear;
   animation-duration: 1s;

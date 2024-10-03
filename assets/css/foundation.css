@@ -286,7 +286,7 @@ header {
     display: block;
     padding: 5px 20px; }
   .horizontal_menu .item:hover > a {
-    background: #f5d1dc; /*#ffcce5;*/
+    background: #f5d1dc;
     border-radius: 40px;
     color: #222;
     text-decoration: none; }
