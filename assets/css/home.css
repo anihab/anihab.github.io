@@ -119,10 +119,15 @@
     transform-origin: 50% 50%; }
     @media all and (min-width: 750px) and (max-width: 1120px) {
       #top .top-cover {
-        display: none; } }
+        display: block;
+        width: 440px;
+        margin: 0 auto; } }
     @media screen and (max-width: 749px) {
       #top .top-cover {
-        display: none; } }
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto; } }
 
 /* not using slick at the moment, but added here for future updates */
 .slick-dots li {
