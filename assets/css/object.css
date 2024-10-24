@@ -100,16 +100,16 @@ a.btn {
       font-size: 4vw; } }
 a.btn-flat {
   overflow: hidden;
-  padding: 1rem 2rem;
+  padding: 1rem 5rem;
   border-radius: 0;
   color: #222;
   background: #ffcce5; }
   @media all and (min-width: 750px) and (max-width: 1120px) {
     a.btn-flat {
-      padding: 0.45vw 1.34vw; } }
+      padding: 0.45vw 3vw; } }
   @media screen and (max-width: 749px) {
     a.btn-flat {
-      padding: 1.33vw 4vw; } }
+      padding: 1.33vw 10vw; } }
   a.btn-flat span {
     position: relative;
     z-index: 1; }
