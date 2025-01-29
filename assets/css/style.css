@@ -292,12 +292,12 @@ header {
   justify-content: center;
 }
 
-.horizontal-menu li.sym {
+.horizontal-menu li.bow {
   display: block;
   width: 14px;
   height: 9px;
   transform: translateY(10px);
-  background: url("../img/sym.svg") no-repeat;
+  background: url("../img/bow.svg") no-repeat;
   background-size: contain;
   margin: 0 10px;
 }
@@ -348,8 +348,8 @@ header {
   background-size: auto auto;
   background-color: #fff;
   background: repeating-linear-gradient(135deg, var(--header-color), var(--header-color) 10px, var(--stripe-color) 15px, var(--stripe-color) 20px);
-  border-bottom: 5px solid var(--primary-color);
-  border-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--tertiary-color) 100%);
+  border-bottom: 5px solid var(--contrast);
+  /* border-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--tertiary-color) 100%); */
   border-image-slice: 1;
   visibility: hidden;
   /* hide lower menu */
@@ -359,7 +359,7 @@ header {
 .horizontal-menu .item:hover .post_menu {
   /* show lower menu on parent hover */
   visibility: visible;
-  /* dpn't show horizontal menu on smaller windows */
+  /* don't show horizontal menu on smaller windows */
 }
 
 .horizontal-menu .post_menu a:hover {
@@ -624,6 +624,81 @@ main {
   #feature-area .media_box.lib::after {
     border-top: solid 20px #ffeb99;
     border-left: solid 20px transparent;
+  }
+}
+
+#feature-area .thumb-area {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#feature-area .thumb-area .logo {
+  padding-top: 10px;
+}
+
+#feature-area .thumb-area .thumb {
+  position: relative;
+  background-color: #fff;
+  width: 440px;
+  border: 2px solid #fff;
+  padding: 0;
+  font-size: 0;
+  overflow: hidden !important;
+}
+
+#feature-area .thumb-area .thumb img {
+  transition: .3s;
+}
+
+#feature-area .thumb-area .thumb img:hover {
+  transform: scale(1.1);
+}
+
+#feature-area .thumb-area .thumb::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  background-size: contain;
+  pointer-events: none;
+}
+
+#feature-area .bg-img img {
+  width: 500px;
+}
+
+@media (min-width: 750px) and (max-width: 1120px) {
+  #feature-area .thumb-area .thumb {
+    width: 39.29vw;
+  }
+}
+
+@media (max-width: 749px) {
+  #feature-area .thumb-area {
+    width: 90%;
+  }
+
+  #feature-area .thumb-area .thumb {
+    width: 100%;
+  }
+
+  #feature-area .thumb-area .thumb img:hover {
+    transform: none;
+  }
+
+  #feature-area .thumb-area .thumb::after {
+    width: 40px;
+    height: 40px;
+  }
+
+  #feature-area .bg-img img {
+    width: 50%;
   }
 }
 

@@ -32,7 +32,7 @@ jQuery(function($){
 });
 
 // top slider
-$(document).on('ready', function() {
+$(document).ready(function() {
     $('.top-slider').slick({
 		slidesToShow:1, // how many slides to show on the screen
 		slidesToScroll:1, // how many slides to scroll at a time
@@ -49,40 +49,29 @@ $(document).on('ready', function() {
 });
 
 // lineup
-$(document).on('ready', function() {
-  $(".lineup-slider").slick({
-	slidesToShow:6, //
-    dots: false,
-	arrows:false,
-    autoplay: true,
-    autoplaySpeed: 1000,
-	cssEase: "linear",
-    speed: 300,
-    infinite: true,
-	swipeToSlide:true,
-	pauseOnFocus:false,
-	pauseOnHover:false,
-	responsive: [
-      {
-    breakpoint: 768,
-    settings: {
-    slidesToShow:4,
-        }
-      },
-      {
-    breakpoint: 750,
-    settings: {
-    slidesToShow:3,
-        }
-      },
-	{
-    breakpoint: 375,
-    settings: {
-    slidesToShow:2,
-        }
-      },
-    ]
-  });
+$(document).ready(function() {
+	try {
+		$(".lineup-slider").slick({
+		  slidesToShow: 6,
+		  dots: false,
+		  arrows: false,
+		  autoplay: true,
+		  autoplaySpeed: 1000,
+		  cssEase: "linear",
+		  speed: 300,
+		  infinite: true,
+		  swipeToSlide: true,
+		  pauseOnFocus: false,
+		  pauseOnHover: false,
+		  responsive: [
+			{ breakpoint: 768, settings: { slidesToShow: 4 } },
+			{ breakpoint: 750, settings: { slidesToShow: 3 } },
+			{ breakpoint: 375, settings: { slidesToShow: 2 } }
+		  ]
+		});
+	  } catch (error) {
+		console.error("Slick failed to initialize:", error);
+	  }	  
 });
 
 // specify :not() to scroll all non-specified link anchors

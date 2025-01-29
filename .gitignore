@@ -1,2 +1,5 @@
 /* pages */
-topics.html
+pages/topics.html
+
+/* styling */
+css/home.css

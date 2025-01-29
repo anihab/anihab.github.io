@@ -41,7 +41,7 @@ h2.heading::before {
 }
 
 /* SNS button styles */
-.fa_color {
+.fa-color {
   color: var(--contrast);
 }
 
@@ -72,7 +72,7 @@ h2.heading::before {
 }
 
 .sns_btn i {
-  color: var(--[--primary-color]);
+  color: var(--high-contrast);
   line-height: 40px;
 }
 
