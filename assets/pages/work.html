@@ -1,348 +1,367 @@
-<!doctype html>
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        
+        <title>anisa</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <meta property="og:site_name" content="anisa">
+        <meta property="og:title" content="anisa">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="my portfolio">
+        <meta property="og:image" content="../img/logo.png">
 
-    <title>anisa</title>
+        <link rel="icon" href="../img/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/destyle.css" type="text/css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="stylesheet" href="../css/loading.css" type="text/css">
+        <link rel="stylesheet" href="../css/utility.css" type="text/css">
+        <link rel="stylesheet" href="../css/object.css" type="text/css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <meta property="og:site_name" content="anisa">
-    <meta property="og:title" content="anisa">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="my portfolio">
-    <meta property="og:image" content="assets/img/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" integrity="sha512-jRxwiuoe3nt8lMSnOzNEuQ7ckDrLl31dwVYFWS6jklXQ6Nzl7b05rrWF9gjSxgOow5nFerdoN6CBB4gY5m5nDw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" integrity="sha512-UO+dUiFTr6cCaPZKCzXEGhYsuK8DkGAS5iThyMUrtHsg+INCFyRM3GiqJ4rjuvfEyn81XGjpfmjSwwR1dAjAsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apng-canvas/2.1.1/apng-canvas.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js" integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
 
-    <link rel="icon" href="assets/img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/destyle.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/loading.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/utility.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/object.css" type="text/css">
+    <body>
+        <div id="splash">
+            <div id="splash-logo">loading</div>
+        </div>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <div class="splashbg"></div>
+        
+        <div id="wrapper">
+            <header>
+                <div id="header" class="c-flex -jc-sa">
+                    <p class="menu-circle">
+                        <a class="menu">
+                            <span class="menu-line menu-line--top"></span>
+                            <span class="menu-line menu-line--bottom"></span>
+                        </a>
+                    </p>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" integrity="sha512-jRxwiuoe3nt8lMSnOzNEuQ7ckDrLl31dwVYFWS6jklXQ6Nzl7b05rrWF9gjSxgOow5nFerdoN6CBB4gY5m5nDw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" integrity="sha512-UO+dUiFTr6cCaPZKCzXEGhYsuK8DkGAS5iThyMUrtHsg+INCFyRM3GiqJ4rjuvfEyn81XGjpfmjSwwR1dAjAsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+                    <nav class="gnav">
+                        <div class="gnav-wrap">
+                            <p class="gnav-logo mt10">
+                                <img src="../img/logo.png" alt="Anisa's Portfolio">
+                            </p>
 
-<body>
-    <div id="splash">
-        <div id="splash-logo">loading</div>
-    </div>
+                            <ul class="gnav-menu">
+                                <li class="col2 tl-c"><a href="index.html">Home</a></li>
+                                <li class="col2 tr-c"><a href="../pages/about.html">About</a></li>
+                                <li class="col3"><a href="../pages/work.html" class="row2">Work</a></li>
+                                <li class="col3"><a href="../pages/research.html">Research</a></li>
+                                <li class="col3"><a href="">Shop</a></li>
+                                <li class="col1 blr-c"><a href="mailto:anisa24cs@gmail.com">Contact</a></li>
+                            </ul>
 
-    <div class="splashbg"></div>
+                            <div class="c-flex -jc-c">
+                                <ul class="c-flex sns_btn">
+                                    <ul class="c-flex sns_btn center">
+                                        <li>
+                                            <p><a href="https://github.com/anihab"><i class="fa-brands fa-github-alt g-size"></i></a></p>
+                                        </li>
+                                        <li>
+                                            <p><a href="mailto:anisa24cs@gmail.com"><i class="fa-solid fa-envelope e-size"></i></a></p>
+                                        </li>
+                                        <li>
+                                            <p><a href="https://www.linkedin.com/in/anisa-habib-32524a270/"><i class="fa-brands fa-linkedin-in ln-size"></i></a></p>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
 
-    <div id="wrapper">
-        <header>
-            <div id="header" class="c-flex -jc-sa">
-                <p class="menu-circle">
-                    <a class="menu">
-                        <span class="menu-line menu-line--top"></span>
-                        <span class="menu-line menu-line--bottom"></span>
-                    </a>
-                </p>
+                <nav class="horizontal-menu">
+                    <ul>
+                        <li class="item">
+                            <a href="./about.html">about</a>
+                        </li>
+                        <li class="bow"></li>
+                        <li class="item">
+                            <a href="./work.html">work</a>
+                        </li>
+                        <li class="bow"></li>
+                        <li class="item">
+                            <a href="./research.html">research</a>
+                        </li>
+                        <li class="bow"></li>
+                        <li class="item"><a href="#">links<i class="fas fa-chevron-down"></i></a>
+                            <ul class="post_menu">
+                                <li><a href="https://github.com/anihab/">github</a></li>
+                                <li class="bow"></li>
+                                <li><a href="https://www.linkedin.com/in/anisa-habib-32524a270/">linkedin</a></li>
+                                <li class="bow"></li>
+                                <li><a href="mailto:anisa24cs@gmail.com">contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-                <nav class="gnav">
-                    <div class="gnav-wrap">
-                        <p class="gnav-logo mt10">
-                            <img src="assets/img/logo.png" alt="Anisa's Portfolio">
-                        </p>
+            <main>
+                <div id="projects">
+                    <p class="section-title"> </p>
+                    <div id="arrival" class="c1060">
 
-                        <ul class="gnav-menu">
-                            <li class="col2 tl-c"><a href="index.html">Home</a></li>
-                            <li class="col2 tr-c"><a href="about.html">About</a></li>
-                            <li class="col3"><a href="work.html" class="row2">Work</a></li>
-                            <li class="col3"><a href="research.html">Research</a></li>
-                            <li class="col3"><a href="design.html">Design</a></li>
-                            <li class="col1 blr-c"><a href="mailto:anisa24cs@gmail.com">Contact</a></li>
+                        <h2 class="heading">Current Projects<span class="date ffs-palt">（as of 1.25）</span></h2>
+                        <ul id="new">
+                            <li class="box">
+                                <p class="title">Diary App<em>&#9312;</em></p>
+                                <p class="type">IOS</p>
+                                <p class="preview"><a href=""><img src="../img/proj/diary.png" alt="Diary (1)"></a></p>
+                                <div class="detail">
+                                    <p class="desc">Designing and building a diary application from scratch in Swift.</p>
+                                    <p class="trial"><a href="" class="btn btn-flat2">
+                                        <span>Demo</span>
+                                        <i class="fas fa-angle-right fa-p-r"></i></a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="box">
+                                <p class="title">Sleep Tracker<em>&#9313;</em><em><span></span></em></p>
+                                <p class="type">IOS</p>
+                                <p class="preview"><a href=""><img src="../img/proj/sleep.png"
+                                            alt="Sleep Tracker（2）＜initiation phase＞"></a></p>
+                                <div class="detail">
+                                    <p class="desc">An application that lets you track your sleep in a cute and motivating
+                                        way!<br>◆ This project is still in the planning phase.</p>
+                                    <p class="trial"><a href="" class="btn btn-flat2">
+                                        <span>Demo</span>
+                                        <i class="fas fa-angle-right fa-p-r"></i></a>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h2 class="heading">Highlight Projects</h2>
+                        <ul id="highlight">
+                            <!--highlight-project-->
+                            <li class="box">
+                                <p class="preview"><a href=""><img src="" alt="Learning Management System (1)"></a></p>
+                                <div class="detail">
+                                    <p class="title">Learning Management System</p>
+                                    <p class="type">Database Systems</p>
+                                    <p class="desc">Designed a relational database and implemented the back-end of a web
+                                        server to represent a learning management system (e.g. Canvas, Google Classroom).
+                                        Constructed different user accounts with varying levels of access to certain pages.
+                                        When assignments, classes, and enrollments are updated, deleted, or graded the
+                                        database upd​​ates accordingly.<br>◆ MySQL, LINQ, C#, ASP.NET, CSS</p>
+                                </div>
+                            </li>
+                            <!--highlight-project-->
+                            <li class="box">
+                                <p class="preview"><a href="https://youtu.be/Rt6W-oNUhsE"><img
+                                            src="../img/proj/23/lifestyle.png" alt="Lifestyle App (2)"></a></p>
+                                <div class="detail">
+                                    <p class="title">Lifestyle App</p>
+                                    <p class="type">Android</p>
+                                    <p class="desc">Built an application that allows users to create and edit profiles to
+                                        receive personalized BMR calculations, search for nearby hikes, and retrieve weather
+                                        forecast information. Implemented a Room database to effectively store and load user
+                                        profile information.<br>◆ Kotlin, Java, SQL, Android Studio<br></p>
+                                    <p class="desc"><br></p> <!--manually added space-->
+                                    <p class="trial"><a href="https://youtu.be/Rt6W-oNUhsE" class="btn btn-flat2"><span>View
+                                                Demo</span><i class="fas fa-angle-right fa-p-r"></i></a></p>
+                                </div>
+                            </li>
+                            <!--highlight-project-->
+                            <li class="box">
+                                <p class="preview"><a href="https://youtu.be/dbb_DRmRus0"><img
+                                            src="../img/proj/22/sprite.gif" alt="Sprite Editor (3)"></a></p>
+                                <div class="detail">
+                                    <p class="title">Sprite Editor</p>
+                                    <p class="type">Software Development</p>
+                                    <p class="desc">Designed a Qt application in which users may use a variety of tools to
+                                        create sprites by drawing a sequence of pixel images. Implemented features that
+                                        allow users to save/load documents and preview the animation at adjustable frame
+                                        rates.<br>◆ C++, Qt</p>
+                                    <p class="desc"><br></p> <!--manually added space-->
+                                    <p class="trial"><a href="https://youtu.be/dbb_DRmRus0" class="btn btn-flat2"><span>View
+                                                Demo</span><i class="fas fa-angle-right fa-p-r"></i></a></p>
+                                </div>
+                            </li>
+                            <!--highlight-project-->
+                            <li class="box">
+                                <p class="preview"><a href="https://youtu.be/ze5vazm0zeo"><img
+                                            src="../img/proj/22/garden.png" alt="Garden Application (4)"></a></p>
+                                <div class="detail">
+                                    <p class="title">Garden Simulation</p>
+                                    <p class="type">Software Development</p>
+                                    <p class="desc">Built an application to educate users on the stages of a tomato plant’s
+                                        life cycle through interactive images, animations, and mini games to progress
+                                        between stages. Implemented the Box2D library.<br>◆ C++, Qt</p>
+                                    <p class="desc"><br></p> <!--manually added space-->
+                                    <p class="trial"><a href="https://youtu.be/ze5vazm0zeo" class="btn btn-flat2"><span>View
+                                                Demo</span><i class="fas fa-angle-right fa-p-r"></i></a></p>
+                                </div>
+                            </li>
+                            <!--highlight-project-->
+                            <li class="box">
+                                <p class="preview"><a href=""><img src="" alt="Tank Wars Game (5)"></a></p>
+                                <div class="detail">
+                                    <p class="title">Tank Wars Game</p>
+                                    <p class="type">Software Development, Networking</p>
+                                    <p class="desc">Implemented the server and client for an online multiplayer Tank Wars
+                                        game using sockets.<br>◆ C#, .NET MAUI</p>
+                                </div>
+                            </li>
+                            <!--highlight-project-->
+                            <li class="box">
+                                <p class="preview"><a href=""><img src="" alt="Spreadsheet Application (6)"></a></p>
+                                <div class="detail">
+                                    <p class="title">Spreadsheet Application<em></em></p>
+                                    <p class="type">Software Development</p>
+                                    <p class="desc">Built a spreadsheet application using the classic Model-View-Controller
+                                        architecture, where a spreadsheet consists of a collection of cells. Users can
+                                        select and edit cells, create formulas with dependencies, save and open documents,
+                                        etc. <br>◆ C#, .NET MAUI</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                </nav>
-            </div>
-
-            <nav class="horizontal-menu">
-                <ul>
-                    <li class="item">
-                        <a href="about.html">about</a>
-                    </li>
-                    <li class="sym"></li>
-                    <li class="item">
-                        <a href="work.html">work</a>
-                    </li>
-                    <li class="sym"></li>
-                    <li class="item">
-                        <a href="research.html">research</a>
-                    </li>
-                    <li class="sym"></li>
-                    <li class="item">
-                        <a href="design.html">design</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <div id="projects">
-                <p class="section-title"> </p>
-                <div id="arrival" class="c1060">
-
-                    <h2 class="heading">Current Projects<span class="date ffs-palt">（as of 1.25）</span></h2>
-                    <ul id="new">
-                        <li class="box">
-                            <p class="title">Diary App<em>&#9312;</em></p>
-                            <p class="type">IOS</p>
-                            <p class="preview"><a href=""><img src="assets/img/proj/diary.png" alt="Diary (1)"></a></p>
-                            <div class="detail">
-                                <p class="desc">Designing and building a diary application from scratch in Swift.</p>
-                                <p class="trial"><a href="" class="btn btn-flat2">
-                                    <span>Demo</span>
-                                    <i class="fas fa-angle-right fa-p-r"></i></a>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="box">
-                            <p class="title">Sleep Tracker<em>&#9313;</em><em><span></span></em></p>
-                            <p class="type">IOS</p>
-                            <p class="preview"><a href=""><img src="assets/img/proj/sleep.png"
-                                        alt="Sleep Tracker（2）＜initiation phase＞"></a></p>
-                            <div class="detail">
-                                <p class="desc">An application that lets you track your sleep in a cute and motivating
-                                    way!<br>◆ This project is still in the planning phase.</p>
-                                <p class="trial"><a href="" class="btn btn-flat2">
-                                    <span>Demo</span>
-                                    <i class="fas fa-angle-right fa-p-r"></i></a>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <h2 class="heading">Highlight Projects</h2>
-                    <ul id="highlight">
-                        <!--highlight-project-->
-                        <li class="box">
-                            <p class="preview"><a href=""><img src="" alt="Learning Management System (1)"></a></p>
-                            <div class="detail">
-                                <p class="title">Learning Management System</p>
-                                <p class="type">Database Systems</p>
-                                <p class="desc">Designed a relational database and implemented the back-end of a web
-                                    server to represent a learning management system (e.g. Canvas, Google Classroom).
-                                    Constructed different user accounts with varying levels of access to certain pages.
-                                    When assignments, classes, and enrollments are updated, deleted, or graded the
-                                    database upd​​ates accordingly.<br>◆ MySQL, LINQ, C#, ASP.NET, CSS</p>
-                            </div>
-                        </li>
-                        <!--highlight-project-->
-                        <li class="box">
-                            <p class="preview"><a href="https://youtu.be/Rt6W-oNUhsE"><img
-                                        src="assets/img/proj/23/lifestyle.png" alt="Lifestyle App (2)"></a></p>
-                            <div class="detail">
-                                <p class="title">Lifestyle App</p>
-                                <p class="type">Android</p>
-                                <p class="desc">Built an application that allows users to create and edit profiles to
-                                    receive personalized BMR calculations, search for nearby hikes, and retrieve weather
-                                    forecast information. Implemented a Room database to effectively store and load user
-                                    profile information.<br>◆ Kotlin, Java, SQL, Android Studio<br></p>
-                                <p class="desc"><br></p> <!--manually added space-->
-                                <p class="trial"><a href="https://youtu.be/Rt6W-oNUhsE" class="btn btn-flat2"><span>View
-                                            Demo</span><i class="fas fa-angle-right fa-p-r"></i></a></p>
-                            </div>
-                        </li>
-                        <!--highlight-project-->
-                        <li class="box">
-                            <p class="preview"><a href="https://youtu.be/dbb_DRmRus0"><img
-                                        src="assets/img/proj/22/sprite.gif" alt="Sprite Editor (3)"></a></p>
-                            <div class="detail">
-                                <p class="title">Sprite Editor</p>
-                                <p class="type">Software Development</p>
-                                <p class="desc">Designed a Qt application in which users may use a variety of tools to
-                                    create sprites by drawing a sequence of pixel images. Implemented features that
-                                    allow users to save/load documents and preview the animation at adjustable frame
-                                    rates.<br>◆ C++, Qt</p>
-                                <p class="desc"><br></p> <!--manually added space-->
-                                <p class="trial"><a href="https://youtu.be/dbb_DRmRus0" class="btn btn-flat2"><span>View
-                                            Demo</span><i class="fas fa-angle-right fa-p-r"></i></a></p>
-                            </div>
-                        </li>
-                        <!--highlight-project-->
-                        <li class="box">
-                            <p class="preview"><a href="https://youtu.be/ze5vazm0zeo"><img
-                                        src="assets/img/proj/22/garden.png" alt="Garden Application (4)"></a></p>
-                            <div class="detail">
-                                <p class="title">Garden Simulation</p>
-                                <p class="type">Software Development</p>
-                                <p class="desc">Built an application to educate users on the stages of a tomato plant’s
-                                    life cycle through interactive images, animations, and mini games to progress
-                                    between stages. Implemented the Box2D library.<br>◆ C++, Qt</p>
-                                <p class="desc"><br></p> <!--manually added space-->
-                                <p class="trial"><a href="https://youtu.be/ze5vazm0zeo" class="btn btn-flat2"><span>View
-                                            Demo</span><i class="fas fa-angle-right fa-p-r"></i></a></p>
-                            </div>
-                        </li>
-                        <!--highlight-project-->
-                        <li class="box">
-                            <p class="preview"><a href=""><img src="" alt="Tank Wars Game (5)"></a></p>
-                            <div class="detail">
-                                <p class="title">Tank Wars Game</p>
-                                <p class="type">Software Development, Networking</p>
-                                <p class="desc">Implemented the server and client for an online multiplayer Tank Wars
-                                    game using sockets.<br>◆ C#, .NET MAUI</p>
-                            </div>
-                        </li>
-                        <!--highlight-project-->
-                        <li class="box">
-                            <p class="preview"><a href=""><img src="" alt="Spreadsheet Application (6)"></a></p>
-                            <div class="detail">
-                                <p class="title">Spreadsheet Application<em></em></p>
-                                <p class="type">Software Development</p>
-                                <p class="desc">Built a spreadsheet application using the classic Model-View-Controller
-                                    architecture, where a spreadsheet consists of a collection of cells. Users can
-                                    select and edit cells, create formulas with dependencies, save and open documents,
-                                    etc. <br>◆ C#, .NET MAUI</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!--past projects-->
-                <div id="past" class="c1060">
-                    <h2 class="heading">Past Projects</h2>
-                    <ul class="accordion-area">
-                        <!--2023-->
+                    <!--past projects-->
+                    <div id="past" class="c1060">
+                        <h2 class="heading">Past Projects</h2>
+                        <ul class="accordion-area">
+                            <!--2023-->
+                            <li>
+                                <section>
+                                    <h3 class="title">2023</h3>
+                                    <div class="box">
+                                        <ul>
+                                            <li><a href="https://youtu.be/Rt6W-oNUhsE"><img
+                                                        src="../img/proj/23/lifestyle_thumb.png"
+                                                        alt="Lifestyle App (1)"></a>
+                                            </li>
+                                            <li><a href="https://github.com/anihab/app1"><img
+                                                        src="../img/proj/23/app1.png" alt="Simple App (2)"></a>
+                                            </li>
+                                            <li><a href="https://github.com/Kyonboo2339/LibraryWebServer"><img
+                                                        src="../img/proj/23/library.png"
+                                                        alt="Library Web Server (3)"></a></li>
+                                            <li><a href=""><img src="../../img/proj/23/chess.png"
+                                                        alt="Chess Database (4)"></a></li>
+                                            <li><a href="https://github.com/anihab/LearningManagementSystem"><img
+                                                        src="../img/proj/23/lms.png" alt="LMS (5)"></a></li>
+                                            <li><a href="https://github.com/anihab/CatsInAI_Project2"><img
+                                                        src="../img/proj/23/pacman.gif" alt="AI Pacman (6)"></a></li>
+                                            <li><a href="https://github.com/Kyonboo2339/CatsInAi_Project3"><img
+                                                        src="../img/proj/23/crawler.gif" alt="AI Crawler (7)"></a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <!--2022-->
+                            <li>
+                                <section>
+                                    <h3 class="title">2022</h3>
+                                    <div class="box">
+                                        <ul>
+                                            <li></li>
+                                            <li><a href="https://github.com/anihab/cs4400/tree/main/a1"><img
+                                                        src="../img/proj/22/simulator.png"
+                                                        alt="Simple Simulator (1)"></a></li>
+                                            <li><a href="https://github.com/anihab/cs4400/tree/main/a4"><img
+                                                        src="../img/proj/22/shell.png" alt="Tiny Shell (2)"></a></li>
+                                            <li><a href="https://github.com/anihab/cs4400/tree/main/a5"><img
+                                                        src="../img/proj/22/malloc.png"
+                                                        alt="Dynamic Memory Allocator (3)"></a></li>
+                                            <li><a href="https://github.com/anihab/cs4400/tree/main/a6"><img
+                                                        src="../img/proj/22/friendlist.png"
+                                                        alt="Friendlist Server (4)"></a></li>
+                                            <li><a
+                                                    href="https://github.com/University-of-Utah-CS3505/a7-sprite-editor-s22-Kyonboo2339"><img
+                                                        src="../img/proj/22/sprite.gif" alt="Sprite Editor (5)"></a>
+                                            </li>
+                                            <li><a
+                                                    href="https://github.com/University-of-Utah-CS3505/a8-edu-app-chocoOnchoco"><img
+                                                        src="../img/proj/22/garden.png" alt="Garden App (6)"></a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                        </ul>
+                        <!--2021-->
                         <li>
                             <section>
-                                <h3 class="title">2023</h3>
-                                <div class="box">
-                                    <ul>
-                                        <li><a href="https://youtu.be/Rt6W-oNUhsE"><img
-                                                    src="assets/img/proj/23/lifestyle_thumb.png"
-                                                    alt="Lifestyle App (1)"></a>
-                                        </li>
-                                        <li><a href="https://github.com/anihab/app1"><img
-                                                    src="assets/img/proj/23/app1.png" alt="Simple App (2)"></a>
-                                        </li>
-                                        <li><a href="https://github.com/Kyonboo2339/LibraryWebServer"><img
-                                                    src="assets/img/proj/23/library.png"
-                                                    alt="Library Web Server (3)"></a></li>
-                                        <li><a href=""><img src="../assets/img/proj/23/chess.png"
-                                                    alt="Chess Database (4)"></a></li>
-                                        <li><a href="https://github.com/anihab/LearningManagementSystem"><img
-                                                    src="assets/img/proj/23/lms.png" alt="LMS (5)"></a></li>
-                                        <li><a href="https://github.com/anihab/CatsInAI_Project2"><img
-                                                    src="assets/img/proj/23/pacman.gif" alt="AI Pacman (6)"></a></li>
-                                        <li><a href="https://github.com/Kyonboo2339/CatsInAi_Project3"><img
-                                                    src="assets/img/proj/23/crawler.gif" alt="AI Crawler (7)"></a></li>
-                                    </ul>
-                                </div>
-                            </section>
-                        </li>
-                        <!--2022-->
-                        <li>
-                            <section>
-                                <h3 class="title">2022</h3>
+                                <h3 class="title">2021</h3>
                                 <div class="box">
                                     <ul>
                                         <li></li>
-                                        <li><a href="https://github.com/anihab/cs4400/tree/main/a1"><img
-                                                    src="assets/img/proj/22/simulator.png"
-                                                    alt="Simple Simulator (1)"></a></li>
-                                        <li><a href="https://github.com/anihab/cs4400/tree/main/a4"><img
-                                                    src="assets/img/proj/22/shell.png" alt="Tiny Shell (2)"></a></li>
-                                        <li><a href="https://github.com/anihab/cs4400/tree/main/a5"><img
-                                                    src="assets/img/proj/22/malloc.png"
-                                                    alt="Dynamic Memory Allocator (3)"></a></li>
-                                        <li><a href="https://github.com/anihab/cs4400/tree/main/a6"><img
-                                                    src="assets/img/proj/22/friendlist.png"
-                                                    alt="Friendlist Server (4)"></a></li>
-                                        <li><a
-                                                href="https://github.com/University-of-Utah-CS3505/a7-sprite-editor-s22-Kyonboo2339"><img
-                                                    src="assets/img/proj/22/sprite.gif" alt="Sprite Editor (5)"></a>
-                                        </li>
-                                        <li><a
-                                                href="https://github.com/University-of-Utah-CS3505/a8-edu-app-chocoOnchoco"><img
-                                                    src="assets/img/proj/22/garden.png" alt="Garden App (6)"></a></li>
+                                        <li><a href="https://github.com/uofu-cs3500-fall21/game-team_west_game"><img
+                                                    src="../img/proj/21/game.png" alt="Tank Wars (1)"></a></li>
+                                        <li><a href="https://github.com/uofu-cs3500-fall21/ps6-team_west"><img
+                                                    src="../img/proj/21/spreadsheet.png" alt="Spreadsheet (2)"></a></li>
                                     </ul>
                                 </div>
                             </section>
                         </li>
-                    </ul>
-                    <!--2021-->
-                    <li>
-                        <section>
-                            <h3 class="title">2021</h3>
-                            <div class="box">
-                                <ul>
-                                    <li></li>
-                                    <li><a href="https://github.com/uofu-cs3500-fall21/game-team_west_game"><img
-                                                src="assets/img/proj/21/game.png" alt="Tank Wars (1)"></a></li>
-                                    <li><a href="https://github.com/uofu-cs3500-fall21/ps6-team_west"><img
-                                                src="assets/img/proj/21/spreadsheet.png" alt="Spreadsheet (2)"></a></li>
-                                </ul>
-                            </div>
-                        </section>
-                    </li>
-                    <!--early-->
-                    <li>
-                        <section>
-                            <h3 class="title">Early Work</h3>
-                            <div class="box">
-                                <ul>
-                                    <li><a href="https://scratch.mit.edu/projects/76155616/"><img
-                                                src="../assets/img/proj/early/spaceship.png"
-                                                alt="Simple Spaceship Game (2015)"></a></li>
-                                </ul>
-                            </div>
-                        </section>
-                    </li>
-                    </ul>
+                        <!--early-->
+                        <li>
+                            <section>
+                                <h3 class="title">Early Work</h3>
+                                <div class="box">
+                                    <ul>
+                                        <li><a href="https://scratch.mit.edu/projects/76155616/"><img
+                                                    src="../../img/proj/early/spaceship.png"
+                                                    alt="Simple Spaceship Game (2015)"></a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </main><!--end projects-->
+            </main><!--end projects-->
 
-        <footer>
-            <div id="footer" class="c1060">
-                <div class="pb30">
-                    <ul class="c-flex sns_btn top" style="align-items: center; justify-content: center;">
-                        <li>
-                            <p>
-                                <a href="https://github.com/anihab">
-                                    <i class="fa-brands fa-github-alt g-size"></i>
-                                </a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <a href="mailto:anisa24cs@gmail.com">
-                                    <i class="fa-solid fa-envelope e-size"></i>
-                                </a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <a href="https://www.linkedin.com/in/anisa-habib-32524a270/">
-                                    <i class="fa-brands fa-linkedin-in ln-size"></i>
-                                </a>
-                            </p>
-                        </li>
-                    </ul>
+            <footer>
+                <div id="footer" class="c1060">
+                    <div class="pb30">
+                        <ul class="c-flex sns_btn top" style="align-items: center; justify-content: center;">
+                            <li>
+                                <p>
+                                    <a href="https://github.com/anihab">
+                                        <i class="fa-brands fa-github-alt g-size"></i>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="mailto:anisa24cs@gmail.com">
+                                        <i class="fa-solid fa-envelope e-size"></i>
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.linkedin.com/in/anisa-habib-32524a270/">
+                                        <i class="fa-brands fa-linkedin-in ln-size"></i>
+                                    </a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="copyright">Anisa &copy;
+                        <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                    </p>
                 </div>
-                <p class="copyright">Anisa &copy;
-                    <script type="text/javascript">document.write(new Date().getFullYear());</script>
-                </p>
-            </div>
-        </footer>
-    </div> <!--wrapper-->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js" integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/apng-canvas/2.1.1/apng-canvas.min.js"></script>
-
-    <script type="text/javascript" src="assets/js/script.js"></script>
-</body>
+            </footer>
+        </div>
+        <script type="text/javascript" src="../js/script.js"></script>
+    </body>
 
 </html>
