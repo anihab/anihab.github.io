@@ -24,7 +24,7 @@ h2.heading::before {
   left: 0;
   width: 25px;
   height: 16px;
-  background: url("../img/sym.svg") left top no-repeat;
+  background: url("../img/bow.svg") left top no-repeat;
   background-size: contain;
 }
 
