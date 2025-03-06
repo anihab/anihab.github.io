@@ -52,11 +52,11 @@ $(document).ready(function() {
 $(document).ready(function() {
 	try {
 		$(".lineup-slider").slick({
-		  slidesToShow: 6,
+		  slidesToShow: 3,
 		  dots: false,
 		  arrows: false,
 		  autoplay: true,
-		  autoplaySpeed: 1000,
+		  autoplaySpeed: 3000,
 		  cssEase: "linear",
 		  speed: 300,
 		  infinite: true,
@@ -64,7 +64,7 @@ $(document).ready(function() {
 		  pauseOnFocus: false,
 		  pauseOnHover: false,
 		  responsive: [
-			{ breakpoint: 768, settings: { slidesToShow: 4 } },
+			{ breakpoint: 768, settings: { slidesToShow: 3 } },
 			{ breakpoint: 750, settings: { slidesToShow: 3 } },
 			{ breakpoint: 375, settings: { slidesToShow: 2 } }
 		  ]
