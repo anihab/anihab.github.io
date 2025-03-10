@@ -37,7 +37,7 @@ $(document).ready(function() {
 		slidesToShow:1, // how many slides to show on the screen
 		slidesToScroll:1, // how many slides to scroll at a time
 		autoplay:true, // whether to autoplay
-		autoplaySpeed: 15000, // autoplay interval
+		autoplaySpeed: 30000, // autoplay interval
 		dots:true, // dots at the bottom of the slider
 		fade:true, // whether to fade the slides
 		pauseOnFocus:false,

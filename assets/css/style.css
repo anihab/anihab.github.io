@@ -97,9 +97,10 @@ header {
 .menu-circle {
   background-size: auto auto;
   background: 5px solid var(--primary-color);
+  /* background-color: var(--header-color); */
   background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--tertiary-color) 100%);
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 3px solid var(--contrast);
   width: 60px;
   height: 60px;
   position: relative;
@@ -140,6 +141,19 @@ header {
   bottom: 6px;
   transform: rotate(135deg);
   background: #fff;
+}
+
+@media (max-width: 749px) {
+  .menu-circle {
+    margin-left: 80%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu {
+    width: 24px;
+    top: 20px;
+  }
 }
 
 .gnav {
@@ -281,6 +295,24 @@ header {
   width: 31.3333%;
 }
 
+@media (max-width: 749px) {
+  .gnav-wrap {
+    width: 93.75%; 
+  }
+
+  .gnav-wrap .gnav-logo {
+    width: 60.94%;
+    padding: 3px 0; 
+  }
+
+  .gnav-menu li {
+    margin: 1%;
+    font-size: 1.4rem;
+    height: 42px;
+    line-height: 1; 
+  }
+}
+
 .horizontal-menu {
   width: 100%;
   position: relative;
@@ -403,7 +435,7 @@ header {
   }
 }
 
-@media (min-width: 750px) and (max-width: 1120px) {
+@media (max-width: 800px) {
   .horizontal-menu {
     display: none;
   }
@@ -423,7 +455,7 @@ main {
   line-height: 1.2;
   align-items: center;
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 
 .newmark {
@@ -759,6 +791,154 @@ main {
   #lineup .slick-slide {
     border-width: 1.33vw;
     margin: 0 1.33vw;
+  }
+}
+
+#newstopic .list {
+  background: none;
+}
+
+#newstopic h1 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#newstopic .topics {
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+#newstopic .topics ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#newstopic .topics ul .box {
+  width: 340px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 6px solid var(--primary-color);
+}
+
+#newstopic .topics ul .box:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+#newstopic .topics ul .box:nth-child(n+4) {
+  margin-top: 20px;
+}
+
+#newstopic .topics ul .box:firstchild,
+#newstopic .topics ul .box:nth-child(3n+4) {
+  border-color: var(--primary-color);
+}
+
+#newstopic .topics ul .box:nth-child(3n+2) {
+  border-color: var(--secondary-color);
+}
+
+#newstopic .topics ul .box:nth-child(3n+3) {
+  border-color: var(--tertiary-color);
+}
+
+#newstopic .topics ul .box a {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  min-height: 480px;
+}
+
+#newstopic .topics ul .box a .pict {
+  overflow: hidden;
+  border-radius: 14px 14px 0 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  outline: none;
+}
+
+#newstopic .topics ul .box a .pict img {
+  transition: .3s;
+}
+
+#newstopic .topics ul .box a:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+
+#newstopic .topics ul .box a:hover .pict img {
+  transform: scale(1.1);
+}
+
+#newstopic .topics ul .box a .date {
+  font-size: 1.6rem;
+  padding: 10px;
+  color: #999;
+}
+
+#newstopic .topics ul .box a .desc {
+  flex-grow: 1;
+  font-size: 1.8rem;
+  padding: 0 10px 10px;
+}
+
+@media (min-width: 750px) and (max-width: 1120px) {
+  #newstopic .topics ul .box {
+    width: 31%;
+  }
+
+  #newstopic .topics ul .box a {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 749px) {
+  #newstopic h1 {
+    width: 82.12%;
+    margin: 0 auto;
+  }
+
+  #newstopic .topics ul .box {
+    width: 49%;
+    border-radius: 15px;
+    border-width: 3px;
+  }
+
+  #newstopic .topics ul .box:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+  #newstopic .topics ul .box:not(:nth-child(2n)) {
+    margin-right: 2%;
+  }
+
+  #newstopic .topics ul .box:nth-child(n+4) {
+    margin-top: 0;
+  }
+
+  #newstopic .topics ul .box:nth-child(n+3) {
+    margin-top: 10px;
+  }
+
+  #newstopic .topics ul .box a .pict {
+    border-radius: 12px 12px 0 0;
+  }
+
+  #newstopic .topics ul .box a:hover .pict img {
+    transform: none;
+  }
+
+  #newstopic .topics ul .box a {
+    min-height: auto;
+  }
+
+  #newstopic .topics ul .box a .date {
+    font-size: 1.4rem;
+  }
+
+  #newstopic .topics ul .box a .desc {
+    font-size: 1.4rem;
   }
 }
 
